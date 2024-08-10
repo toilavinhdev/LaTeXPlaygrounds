@@ -1,7 +1,215 @@
-\documentclass{article}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CUSTOM COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+    \resumeItem{#1}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart} {
+    \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd} {
+    \end{itemize}
+}
+
+\newcommand{\resumeItemListStart} {
+    \begin{itemize}
+}
+
+\newcommand{\resumeItemListEnd} {
+    \end{itemize} 
+    \vspace{-5pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CV  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+    %-----------HEADER-----------
+    \begin{center}
+        \textbf{\Huge \scshape Hoang Dinh Vinh}
+    \end{center}
+    
+    \begin{center}
+        \small 0913 361 135 
+        $|$
+        \href{mailto:hoangdvinh68@gmail.com}{\underline{hoangdvinh68@gmail.com}} 
+        $|$
+        \href{https://github.com/toilavinhdev}{\underline{github.com/toilavinhdev}} 
+    \end{center}
 
-Hello World
 
+    %-----------EDUCATION-----------
+    \section{Education}
+        \resumeSubHeadingListStart
+            \resumeSubheading {Hanoi University of Civil Engineering} {Sept. 2021 -- Present} {Computer Science} {GPA 3.00}
+        \resumeSubHeadingListEnd
+
+    %-----------SKILLS-----------
+    \section{Skills}
+        \begin{itemize}[leftmargin=0.15in, label={}]
+            \small{
+                \item{
+                    \vspace{1mm}
+                    \textbf{Programming languages}{: C\#, TypeScript, JavaScript.} \\
+                    \vspace{1mm}
+                    \textbf{Frameworks/Library}{: .NET, Entity Framework, Angular, TailwindCSS.} \\
+                    \vspace{1mm}
+                    \textbf{Databases}{: SQL Server, PostgreSQL, MongoDB, Redis.} \\
+                    \vspace{1mm}
+                    \textbf{Additional skills}{: HTML/CSS/SCSS, Docker, Git/GitHub, Nginx, Linux(Fedora, Ubuntu).} \\
+                    \vspace{1mm}
+                    \textbf{Soft skils}{: Problem-solving, Adaptability, Teamwork.} \\
+                    \vspace{1mm}
+                }
+            }
+        \end{itemize}
+
+    %-----------EXPERIENCES-----------
+    \section{Experiences}
+        \resumeSubHeadingListStart
+            \resumeSubheading {Novaon Digital} {May 2023 - May 2024} {Intern .NET Developer} {}
+            \resumeItemListStart
+                \resumeItem{Developed APIs to query the main database and disk cache.}
+                \resumeItem{Built a mechanism to on/off campaign and advertising groups.}
+                \resumeItem{Developed the UX/UI according to the profession through versions.}
+                \resumeItem{Developed role-based authorization mechanism for reporting functions}
+                \resumeItem{Developed and optimized SQL queries in stored procedures}
+            \resumeItemListEnd
+        \resumeSubHeadingListEnd
+        
+    %-----------PROJECTS-----------
+    \section{Projects}
+        %-----------Together.NET-----------
+        \resumeSubHeadingListStart
+            \resumeSubheading {Together.NET} {Jun. 2024 - Aug. 2024} {Personal project} {}
+            \resumeItemListStart
+                \resumeItem{\textbf{Description}: A personal project,  small forum to support members to discuss, share and exchange experiences.}
+                \resumeItem{\textbf{Main responsibilities:}:}
+                \resumeItemListStart
+                    \resumeItem{Dockerize project and deloy production on Ubuntu Server 22.04 (VPS).}
+                    \resumeItem{Setup Nginx as a reverse proxy.}
+                    \resumeItem{Implemeted dynamic authorization applied Role-Based Access Control (RBAC).}
+                    \resumeItem{Developed real-time Chat and Notifications functionality using WebSocket.}
+                    \resumeItem{Used redis as in-memory cache to optimize queries.}
+                    \resumeItem{Logging with Serilog Discord Web Hook.}
+                    \resumeItem{Customized reusable components, form controls, pipes and directives in Angular.}
+                \resumeItemListEnd
+                \vspace{0.2cm}
+                \resumeItem{\textbf{Technologies}: C\# .NET 8, EF, PostgreSQL, Redis, Angular 17, TailwindCSS, PrimeNG, Docker, Nginx.}
+                \resumeItem{
+                    \textbf{Source code}: \href{https://github.com/toilavinhdev/Together.NET.v2}{\underline{github.com/toilavinhdev/Together.NET.v2}}.
+                }
+                \resumeItem{
+                    \textbf{Demo}: \href{https://togethernet.asia}{\underline{togethernet.asia}}.
+                }
+            \resumeItemListEnd
+        \resumeSubHeadingListEnd
+
+        %-----------Cinemax-----------
+        \resumeSubHeadingListStart
+            \resumeSubheading {Cinemax} {Mar. 2024 - May 2024} {Personal project} {}
+            \resumeItemListStart
+                \resumeItem{\textbf{Description}: A personal project, native mobile application to sell movie tickets for cinemas.}
+                \resumeItem{\textbf{Main responsibilities:}:}
+                \resumeItemListStart
+                    \resumeItem{Used Hangfire to create cron jobs to check payments and check movie status.}
+                    \resumeItem{Used SignalR to develop a real-time seat reservation feature.}
+                    \resumeItem{Used Redux Tookit, Redux Thunk to create and manage states.}
+                \resumeItemListEnd
+                \vspace{0.2cm}
+                \resumeItem{\textbf{Technologies}: C\# .NET 8, EF, MongoDB, React Native(Expo), Redux Toolkit, Native Wind, Docker, Ngrok.}
+                \resumeItem{
+                    \textbf{Source code \& demo}: \href{https://github.com/toilavinhdev/eCinemax}{\underline{github.com/toilavinhdev/eCinemax}}
+                }
+            \resumeItemListEnd
+        \resumeSubHeadingListEnd
+        
 \end{document}
